@@ -3,6 +3,9 @@ console.log($);
 
 $(document).ready(function() {
     //$("#lower-all").click(function(e) {});
+    $('div').click(function() {
+        console.log("click");
+    });
     $("body").on("click", "#lower-all", function(e) {
         e.preventDefault();
         $(".item").css({ "text-transform": "lowercase", "text-decoration": "underline" });
@@ -27,6 +30,6 @@ $(document).ready(function() {
         }, 3000);
         setTimeout(function(e) {
             $(".item").stop(true);
-        }, 700)
+        }, 700);
     });
 });
